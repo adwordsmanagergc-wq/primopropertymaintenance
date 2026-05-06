@@ -7,7 +7,7 @@
   --bg: #ffffff;
   --bg-alt: #f5f7f6;
   --border: #e3e7e5;
-  --max: 1600px;
+  --max: 1140px;
   --radius: 8px;
   --shadow: 0 4px 14px rgba(0,0,0,0.06);
 }
@@ -30,9 +30,9 @@ a { color: var(--primary); }
 a:hover { color: var(--primary-dark); }
 
 .container {
-  width: 100%;
+  max-width: var(--max);
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 20px;
 }
 
 /* Header */
@@ -47,8 +47,8 @@ a:hover { color: var(--primary-dark); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 32px;
-  width: 100%;
+  padding: 14px 20px;
+  max-width: var(--max);
   margin: 0 auto;
 }
 .logo {
@@ -342,4 +342,3 @@ section.alt { background: var(--bg-alt); }
   .hero { padding: 50px 0 40px; }
   section { padding: 45px 0; }
 }
-
