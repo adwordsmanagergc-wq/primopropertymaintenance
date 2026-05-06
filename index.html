@@ -143,7 +143,111 @@
       </ul>
       <p><a href="about.html" class="btn btn-primary" style="background: var(--primary); color: #fff;">More about us</a></p>
     </div>
-    <img class="feature-img" src="images/team.svg" alt="Primo Property Maintenance team at work" loading="lazy" width="800" height="600">
+    <svg class="feature-map" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="map-title">
+      <title id="map-title">Service area map – click a suburb for details</title>
+      <defs>
+        <linearGradient id="map-bg" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#f0f6f3"/>
+          <stop offset="1" stop-color="#dce8e1"/>
+        </linearGradient>
+        <style>
+          .feature-map .pill { cursor: pointer; }
+          .feature-map .pill rect { fill: #ffffff; stroke: #0d4a3a; stroke-width: 1.5; transition: fill .15s ease, stroke .15s ease; }
+          .feature-map .pill text { fill: #0d4a3a; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; font-size: 13px; font-weight: 600; pointer-events: none; }
+          .feature-map .pill:hover rect { fill: #0d4a3a; }
+          .feature-map .pill:hover text { fill: #ffffff; }
+          .feature-map .pill.home rect { fill: #f4a261; stroke: #e8924f; stroke-width: 2; }
+          .feature-map .pill.home text { fill: #1f2a30; font-size: 14px; font-weight: 700; }
+          .feature-map .pill.home:hover rect { fill: #e8924f; stroke: #d4842b; }
+          .feature-map .connector { stroke: #0d4a3a; stroke-width: 1; stroke-dasharray: 3 4; opacity: .35; }
+        </style>
+      </defs>
+      <rect width="800" height="600" fill="url(#map-bg)"/>
+
+      <!-- decorative parks -->
+      <g fill="#0d4a3a" opacity=".07">
+        <ellipse cx="680" cy="80" rx="140" ry="55"/>
+        <ellipse cx="100" cy="540" rx="110" ry="45"/>
+        <ellipse cx="500" cy="555" rx="100" ry="40"/>
+        <ellipse cx="50" cy="200" rx="60" ry="30"/>
+      </g>
+
+      <!-- Yarra river -->
+      <path d="M-20 80 Q200 55 400 95 Q600 135 820 80" stroke="#b9cdc4" stroke-width="12" fill="none" opacity=".7"/>
+
+      <!-- subtle road grid -->
+      <g stroke="#0d4a3a" stroke-width="1" opacity=".1">
+        <line x1="0" y1="220" x2="800" y2="220"/>
+        <line x1="0" y1="360" x2="800" y2="360"/>
+        <line x1="0" y1="500" x2="800" y2="500"/>
+        <line x1="220" y1="0" x2="220" y2="600"/>
+        <line x1="420" y1="0" x2="420" y2="600"/>
+        <line x1="600" y1="0" x2="600" y2="600"/>
+      </g>
+
+      <!-- connectors from Glen Iris -->
+      <g class="connector" fill="none">
+        <line x1="410" y1="300" x2="360" y2="160"/>
+        <line x1="410" y1="300" x2="545" y2="190"/>
+        <line x1="410" y1="300" x2="220" y2="245"/>
+        <line x1="410" y1="300" x2="95" y2="325"/>
+        <line x1="410" y1="300" x2="607" y2="355"/>
+        <line x1="410" y1="300" x2="172" y2="430"/>
+        <line x1="410" y1="300" x2="330" y2="465"/>
+        <line x1="410" y1="300" x2="517" y2="485"/>
+      </g>
+
+      <!-- title -->
+      <text x="400" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#0d4a3a" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif">Where We Work</text>
+      <text x="400" y="58" text-anchor="middle" font-size="12" fill="#5b6770" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif">Tap any suburb for details</text>
+
+      <!-- compass -->
+      <g transform="translate(740 80)">
+        <circle r="22" fill="#fff" stroke="#0d4a3a" stroke-width="1.5"/>
+        <path d="M0 -15 L4 0 L0 -3 L-4 0 Z" fill="#0d4a3a"/>
+        <text y="6" text-anchor="middle" font-size="10" fill="#0d4a3a" font-weight="700" font-family="Arial">N</text>
+      </g>
+
+      <!-- suburb pills -->
+      <a href="areas/hawthorn-east.html" class="pill">
+        <rect x="290" y="144" width="140" height="32" rx="16"/>
+        <text x="360" y="165" text-anchor="middle">Hawthorn East</text>
+      </a>
+      <a href="areas/camberwell.html" class="pill">
+        <rect x="490" y="174" width="110" height="32" rx="16"/>
+        <text x="545" y="195" text-anchor="middle">Camberwell</text>
+      </a>
+      <a href="areas/kooyong.html" class="pill">
+        <rect x="170" y="229" width="100" height="32" rx="16"/>
+        <text x="220" y="250" text-anchor="middle">Kooyong</text>
+      </a>
+      <a href="areas/toorak.html" class="pill">
+        <rect x="50" y="309" width="90" height="32" rx="16"/>
+        <text x="95" y="330" text-anchor="middle">Toorak</text>
+      </a>
+
+      <a href="areas/glen-iris.html" class="pill home">
+        <rect x="345" y="280" width="130" height="42" rx="21"/>
+        <text x="410" y="306" text-anchor="middle">★ Glen Iris</text>
+      </a>
+
+      <a href="areas/ashburton.html" class="pill">
+        <rect x="555" y="339" width="105" height="32" rx="16"/>
+        <text x="607" y="360" text-anchor="middle">Ashburton</text>
+      </a>
+      <a href="areas/armadale.html" class="pill">
+        <rect x="120" y="414" width="105" height="32" rx="16"/>
+        <text x="172" y="435" text-anchor="middle">Armadale</text>
+      </a>
+      <a href="areas/malvern.html" class="pill">
+        <rect x="280" y="449" width="100" height="32" rx="16"/>
+        <text x="330" y="470" text-anchor="middle">Malvern</text>
+      </a>
+      <a href="areas/malvern-east.html" class="pill">
+        <rect x="450" y="469" width="135" height="32" rx="16"/>
+        <text x="517" y="490" text-anchor="middle">Malvern East</text>
+      </a>
+    </svg>
   </div>
 </section>
 
