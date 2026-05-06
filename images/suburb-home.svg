@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 375" role="img" aria-labelledby="t">
+<title id="t">Suburban home in Melbourne's inner south-east</title>
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#e7efea"/>
+    <stop offset="1" stop-color="#c8d8d0"/>
+  </linearGradient>
+</defs>
+<rect width="600" height="375" fill="url(#sky)"/>
+<!-- distant trees -->
+<g fill="#0d4a3a" opacity=".25">
+  <circle cx="50" cy="220" r="60"/>
+  <circle cx="130" cy="210" r="55"/>
+  <circle cx="540" cy="215" r="58"/>
+  <circle cx="470" cy="225" r="50"/>
+</g>
+<!-- ground -->
+<rect x="0" y="280" width="600" height="95" fill="#b9cdc4"/>
+<!-- path -->
+<polygon points="270,375 330,375 360,290 240,290" fill="#d8e4df"/>
+<!-- house body -->
+<g transform="translate(170 130)">
+  <rect x="0" y="60" width="260" height="160" fill="#0d4a3a"/>
+  <!-- roof -->
+  <polygon points="-30,60 130,-30 290,60" fill="#083024"/>
+  <!-- chimney -->
+  <rect x="200" y="-10" width="22" height="50" fill="#083024"/>
+  <!-- door -->
+  <rect x="110" y="130" width="50" height="90" rx="4" fill="#f4a261"/>
+  <circle cx="150" cy="180" r="3" fill="#083024"/>
+  <!-- left window -->
+  <rect x="30" y="100" width="50" height="50" fill="#f9f5ec" rx="3"/>
+  <line x1="55" y1="100" x2="55" y2="150" stroke="#0d4a3a" stroke-width="3"/>
+  <line x1="30" y1="125" x2="80" y2="125" stroke="#0d4a3a" stroke-width="3"/>
+  <!-- right window -->
+  <rect x="180" y="100" width="50" height="50" fill="#f9f5ec" rx="3"/>
+  <line x1="205" y1="100" x2="205" y2="150" stroke="#0d4a3a" stroke-width="3"/>
+  <line x1="180" y1="125" x2="230" y2="125" stroke="#0d4a3a" stroke-width="3"/>
+</g>
+<!-- foreground tree (right) -->
+<g transform="translate(500 200)">
+  <rect x="-6" y="60" width="14" height="80" fill="#5b6770"/>
+  <circle cx="0" cy="40" r="50" fill="#0d4a3a"/>
+  <circle cx="-25" cy="55" r="35" fill="#083024" opacity=".6"/>
+  <circle cx="22" cy="55" r="32" fill="#1a6e54" opacity=".7"/>
+</g>
+<!-- foreground bush (left) -->
+<g transform="translate(70 270)">
+  <ellipse cx="0" cy="0" rx="50" ry="22" fill="#0d4a3a"/>
+  <ellipse cx="-20" cy="-6" rx="22" ry="14" fill="#1a6e54"/>
+</g>
+</svg>
