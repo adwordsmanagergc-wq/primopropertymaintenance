@@ -7,7 +7,7 @@
   --bg: #ffffff;
   --bg-alt: #f5f7f6;
   --border: #e3e7e5;
-  --max: 1280px;
+  --max: 1600px;
   --radius: 8px;
   --shadow: 0 4px 14px rgba(0,0,0,0.06);
 }
@@ -30,9 +30,9 @@ a { color: var(--primary); }
 a:hover { color: var(--primary-dark); }
 
 .container {
-  max-width: var(--max);
+  width: min(94%, var(--max));
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
 }
 
 /* Header */
@@ -47,8 +47,8 @@ a:hover { color: var(--primary-dark); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 20px;
-  max-width: var(--max);
+  padding: 14px 0;
+  width: min(94%, var(--max));
   margin: 0 auto;
 }
 .logo {
