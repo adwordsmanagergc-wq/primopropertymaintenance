@@ -30,9 +30,9 @@ a { color: var(--primary); }
 a:hover { color: var(--primary-dark); }
 
 .container {
-  width: min(94%, var(--max));
+  width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 32px;
 }
 
 /* Header */
@@ -47,8 +47,8 @@ a:hover { color: var(--primary-dark); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 0;
-  width: min(94%, var(--max));
+  padding: 14px 32px;
+  width: 100%;
   margin: 0 auto;
 }
 .logo {
