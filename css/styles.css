@@ -345,3 +345,28 @@ section.alt { background: var(--bg-alt); }
   .hero { padding: 50px 0 40px; }
   section { padding: 45px 0; }
 }
+
+/* Compact horizontal service cards on mobile */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    align-items: stretch;
+  }
+  .card .card-img {
+    width: 130px;
+    height: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
+  .card .card-body {
+    padding: 14px 16px;
+  }
+  .card-body h3 { font-size: 1rem; margin-bottom: 4px; }
+  .card-body p { font-size: 0.85rem; margin-bottom: 6px; }
+  .card-body a { font-size: 0.85rem; }
+}
